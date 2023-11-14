@@ -19,7 +19,7 @@ require("dotenv").config();
 app.use(
   cors({
     credentials: true,
-    origin: [`${process.env.FE_clien}`, `${process.env.FE_admin}`],
+    origin: [`${process.env.FE_clien}`, "https://ass3admin.onrender.com"],
   })
 );
 
