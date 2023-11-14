@@ -70,9 +70,8 @@ app.use(
     store: store,
     proxy: true,
     cookie: {
-      path    : '/',
       secure: false,
-      httpOnly: false,
+      httpOnly: true,
     },
   })
 );
