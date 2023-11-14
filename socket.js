@@ -4,8 +4,8 @@ module.exports = {
     io = require("socket.io")(httpServer, {
       cors: {
         origin: [
-          `${process.env.ORIGIN_FE_CLIENT}`,
-          `${process.env.ORIGIN_FE_ADMIN}`,
+          `${process.env.ORIGIN_FE_client}`,
+          `${process.env.ORIGIN_FE_admin}`,
           "http://localhost:3000",
           "http://localhost:3001",
         ],
