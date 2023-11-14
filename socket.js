@@ -4,7 +4,7 @@ module.exports = {
     io = require("socket.io")(httpServer, {
       cors: {
         origin: [
-          "http://localhost:3000",
+          "https://ass3client.onrender.com",
           "https://ass3admin.onrender.com",
         ],
         credentials: true,
