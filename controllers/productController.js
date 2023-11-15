@@ -84,14 +84,12 @@ exports.addNewProduct = (req, res, next) => {
     error.statusCode = 422;
     throw error;
   }
-  console.log(be_URL);
   const files = req.files;
-  const img1 = `${process.env.BE}${files[0].path}`;
-  const img2 = `${process.env.BE}${files[1].path}`;
-  const img3 = `${process.env.BE}${files[2].path}`;
-  const img4 = `${process.env.BE}${files[3].path}`;
+  const img1 = `https://ass3admin.onrender.com/${files[0].path}`;
+  const img2 = `https://ass3admin.onrender.com/${files[1].path}`;
+  const img3 = `https://ass3admin.onrender.com/${files[2].path}`;
+  const img4 = `https://ass3admin.onrender.com/${files[3].path}`;
   const name = req.body.name;
-  console.log(img1);
   const category = req.body.category;
   const long_desc = req.body.long_desc;
   const short_desc = req.body.short_desc;
