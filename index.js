@@ -69,6 +69,7 @@ app.use(
     saveUninitialized: false,
     store: store,
     proxy: true,
+    name: "MyApp",
     cookie: {
       secure: false,
       httpOnly: true,
