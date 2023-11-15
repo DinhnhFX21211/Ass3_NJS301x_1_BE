@@ -85,7 +85,6 @@ exports.addNewProduct = (req, res, next) => {
     throw error;
   }
   const files = req.files;
-  const files = req.files;
   const img1 = files[0].path;
   const img2 = files[1].path;
   const img3 = files[2].path;
