@@ -4,7 +4,7 @@ const adminController = require("../controllers/adminController");
 const isAuth = require("../middleware/is-auth");
 
 //Board admin page
-router.get("/info-board", adminController.getInfoBoard);
+router.get("/info-board", isAuth,adminController.getInfoBoard);
 
 //Show Order details
 router.get("/order/:orderID", isAuth, adminController.getOrderDetails);
