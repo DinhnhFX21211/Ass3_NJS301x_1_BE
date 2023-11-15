@@ -85,10 +85,11 @@ exports.addNewProduct = (req, res, next) => {
     throw error;
   }
   const files = req.files;
-  const img1 = `https://ass3admin.onrender.com/${files[0].path}`;
-  const img2 = `https://ass3admin.onrender.com/${files[1].path}`;
-  const img3 = `https://ass3admin.onrender.com/${files[2].path}`;
-  const img4 = `https://ass3admin.onrender.com/${files[3].path}`;
+  const files = req.files;
+  const img1 = files[0].path;
+  const img2 = files[1].path;
+  const img3 = files[2].path;
+  const img4 = files[3].path;
   const name = req.body.name;
   const category = req.body.category;
   const long_desc = req.body.long_desc;
