@@ -71,8 +71,11 @@ app.use(
     proxy: true,
     name: "MyApp",
     cookie: {
-      secure: false,
+      sameSite: "none",
+      secure: "auto",
       httpOnly: true,
+      // secure: false,
+      // httpOnly: true,
     },
   })
 );
